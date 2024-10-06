@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="berita.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#03312E",
+              hover: "#009F93",
+            },
+          },
+        },
+      };
+    </script>
+    <title>InfoKesehatan</title>
+  </head>
+
+  <body class="font-serif">
+    <header class="flex justify-between bg-primary px-10 py-4">
+      <div class="flex justify-start items-center gap-6">
+        <img src="sehat.png" class="max-w-[64px]" />
+        <div class="text-white">
+          <h2 class="text-3xl font-semibold">Artikel Kesehatan</h2>
+          <h3>Pentingnya Kesehatan di Era Modern</h3>
+        </div>
+      </div>
+
+      <nav class="flex">
+        <ul
+          class="flex gap-8 justify-center-30 items-center font-semibold text-lg text-white"
+        >
+          <li><a href="berita(main).html" class="hover:text-hover">Home</a></li>
+          <li><a href="about.html" class="hover:text-hover">About Us</a></li>
+          <li><a href="contact.html" class="hover:text-hover">Contact</a></li>
+          <li><a href="#pop" class="hover:text-hover">Artikel Populer</a></li>
+          <li><a href="#forum" class="hover:text-hover">Forum</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="p-3 bg-green-100">
+      <section id="mental">
+        <article class="flex flex-row items-center gap-3 py-2">
+          <div class="">
+            <h3 class="text-2xl">Cara Menjaga Kesehatan Mental</h3>
+            <img src="mental.jpeg.jpg" alt="gambar depresi" class="py-2 w-full" />
+          </div>
+          <p class="text-2xl">
+            Kesehatan mental adalah bagian penting dari kesejahteraan secara
+            keseluruhan. Menjaga kesehatan mental <br />
+            tidak hanya tentang menghindari gangguan mental, tetapi juga tentang
+            mengelola stres, emosi, dan hubungan <br />
+            sosial. Berikut ini adalah beberapa cara efektif untuk menjaga
+            kesehatan mental Anda. <a href="mental.html" class="hover:text-hover text-blue-900 text-semibold">Selengkapnya...</a>
+          </p>
+          <img src="" alt="" />
+        </article>
+      </section>
+
+      <section id="nutrisi">
+        <article class="py-4 flex flex-row items-center gap-10 ">
+          <div>
+            <h3 class="text-2xl">Nutrisi Seimbang Untuk Anak</h3>
+          <img src="nutrisi anak.jpeg.jpg" alt="" class="py-2 w-full" />
+          </div>
+          <p class="text-2xl">
+            Kesehatan mental adalah bagian penting dari kesejahteraan secara
+            keseluruhan. Menjaga kesehatan mental <br />
+            tidak hanya tentang menghindari gangguan mental, tetapi juga tentang
+            mengelola stres, emosi, dan hubungan <br />
+            sosial. Berikut ini adalah beberapa cara efektif untuk menjaga
+            kesehatan mental Anda. <a href="nutrisi.html"class="hover:text-hover text-blue-900 text-semibold">Selengkapnya...</a>
+          </p>
+          <img src="" alt="" />
+        </article>
+      </section>
+    </main>
+
+    <section id="pop" class="bg-green-100 p-3">
+      <aside>
+        <div>
+          <h3 class="text-4xl mb-3">Artikel Populer</h3>
+        </div>
+        <ul class="">
+          <li><a href="stress.html" class="hover:text-hover text-blue-900 text-semibold text-2xl ">Mengatasi Stres di Kalangan Remaja</a></li>
+          <li><a href="berkualitas.html" class="hover:text-hover text-blue-900 text-semibold text-2xl">Tips Tidur Yang Berkualitas</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="forum" class="bg-green-100 p-3">
+      <h2 class="text-2xl">Forum Diskusi</h2>
+      <form action="form.php" method="post">
+        <label for="nama">Nama:</label class="py-2">
+        <input type="text" id="nama" name="nama" required />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea>
+        <br /><br />
+        <button type="submit" class="py-2 px-4 border-2 bg-primary text-white hover:bg-green-100 hover:text-primary hover:border-2 hover:border-primary transition duration-300">Kirim</button>
+      </form>
+    </section>
+
+    <footer class="bg-primary text-white py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">&copy; Artikel Kesehatan. All rights reserved.</p>
+        <div class="flex justify-center mt-4">
+          <a href="berita(main).html" class="mx-2 text-white hover:text-hover">Home</a>
+          <a href="about.html" class="mx-2 text-white hover:text-hover">about Us</a>
+          <a href="contact.html" class="mx-2 text-white hover:text-hover">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
